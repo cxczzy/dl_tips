@@ -1,3 +1,4 @@
+
 # dl_tips
 1. some deep learning installation tips
 
@@ -5,3 +6,6 @@
 
 2) how to install tensorflow in python if it is installed in C:/ and whihout enough authority?
 use powershell and right-click to open it in adminstrator authority
+
+3) how to solve the problem that .py with chinese characters cannot be run in shell?
+add [#encoding=utf-8] at the head of .py and make sure it is in utf-8 encoding
