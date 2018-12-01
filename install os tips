@@ -1,0 +1,11 @@
+1. install case 1:
+1) install env: SSD(GPT, win10) + HDD(GPT, CentOS7)
+2) mainly references: 
+https://www.jianshu.com/p/5ee2f83e83bf
+https://blog.csdn.net/stranger_cjhan/article/details/52040285
+3) personal tips:
+a) you MUST make sure that none of your HDD has not been formatted yet, or it may lead to that you cannot create /boot/efi when installing CentOS 7;
+b) the commands which means to query the partition of your usb data-traveler are different between the situations that your HDDs are in MBR or GPT, please pay attention to this;
+c) install command: "hd:/dev/sdXX nomodeset quiet" and the "nomodeset" MUST be added;
+d) you MUST create /boot/efi when installing CentOS 7, ot it cannot be continued any more;
+e) only partition /swap can be formatted as LVM, and the others are recommanded as standard.
