@@ -1,0 +1,7 @@
+1. opencv3.3.0 + cuda8.0 + vs2015
+you need to compile opencv mannully because that opencv does not supply the cuda-version.
+you can do this as https://blog.csdn.net/liujiabin076/article/details/68926699.
+there are some tips:
+1) please make sure your cuda8.0 and VS2015 have been installed correctly and you can see the CUDA build options in cmake;
+2) check WITH_CUDA=ON
+3）check BUILD_PERF_TEST=OFF, or it may occur lots of compiling errors like: std::tuple<cv::Size,perf::`anonymous-namespace'::MatDepth
