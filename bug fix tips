@@ -1,0 +1,14 @@
+1. about compiling errors in VS and gcc
+
+1) you may need to pay attention to the Chinese characters in your source/head files.
+the Chinese characters notes may lead to confusing compiling problems and make that your VS cannot locate your error line.
+please see these tips:
+a. concerning file encoding:
+https://blog.csdn.net/Anzhongliu/article/details/51068050
+b. concerning Chinese characters notes:
+https://blog.csdn.net/vincent2610/article/details/69596700
+https://blog.csdn.net/u013928720/article/details/53513343
+!
+2) tips: 
+a) make sure your source/head files are encoded in utf-8 no bom and ended with LF but bot CRLF;
+b) make sure all of your Chinese notes are commented as "/* 这是一段注释 */" or "// 这是一段注释" and be very careful with the spaces!
