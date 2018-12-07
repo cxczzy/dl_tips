@@ -10,5 +10,5 @@ https://blog.csdn.net/vincent2610/article/details/69596700
 https://blog.csdn.net/u013928720/article/details/53513343
 !
 2) tips: 
-a) make sure your source/head files are encoded in utf-8 no bom and ended with LF but bot CRLF;
+a) make sure your source/head files are encoded in utf-8 no bom and ended with LF but not CRLF;
 b) make sure all of your Chinese notes are commented as "/* 这是一段注释 */" or "// 这是一段注释" and be very careful with the spaces!
