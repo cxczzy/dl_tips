@@ -1,4 +1,3 @@
-
 # dl_tips
 1. some deep learning installation tips
 
@@ -13,3 +12,7 @@ use powershell and right-click to open it in adminstrator authority
 add [#encoding=utf-8] at the head of .py and make sure it is in utf-8 encoding
 
 4) make sure your GPU drivers have been updated, or it may lead to some ridiculous problems
+
+5) fail in loading tensorflow model from others and recall "Cannot assign a device for operation..."
+fix: https://blog.csdn.net/luxgang/article/details/83116564
+use [sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True, log_device_placement=True))] to replace [sess = tf.Session()]
